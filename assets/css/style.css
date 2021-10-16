@@ -167,7 +167,7 @@ html{
 
 /* Slider */
 #slider{
-    background: url('/assets/img/chicago.jpg') top center/cover no-repeat;
+    background: url('../img/chicago.jpg') top center/cover no-repeat;
     position: relative;
     padding-top: 50%;
     margin-top: 46px;
@@ -193,6 +193,7 @@ html{
     font-size: 15px;
     margin-top: 25px;
     font-weight: bolder;
+    text-shadow: 0 0 4px #000;
 }    
 
 #content{
@@ -446,7 +447,7 @@ html{
 }
 
 /* Mobile&Tablet */
-@media (max-width:1023px){
+@media (max-width:63.9375em){
     .buy-ticket{
         padding: 16px 16px;
     }
@@ -486,7 +487,7 @@ html{
 }
 
 /* Mobile */
-@media (max-width:740px){
+@media (max-width: 46.1875em){
     .s-full-width,
     .s-col-full{
         width: 100%;
@@ -541,6 +542,14 @@ html{
 
     .contact-user{
         margin-top: 32px;
+    }
+
+    .form-control{
+        font-size: 17px;
+    }
+
+    .social-list{
+        font-size: 42px;
     }
 
 }
