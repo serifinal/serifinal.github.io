@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     <title>Google</title>
+    <script defer src="./main.js"></script>
 </head>
 <body>
     <div class="main">
@@ -18,8 +19,12 @@
                     <a href="#" class="gmail">Gmail</a>
                     <a href="#">Hình ảnh</a>
                 </div>
-                <i class="fas fa-bars menu"></i>
-                <img src="./assets/img/unnamed.png" alt="user" class="user">
+                <a href="" class="circle-shadow">
+                    <i class="fas fa-bars menu"></i>
+                </a>
+                <a href="" class="circle-shadow">
+                    <img src="./assets/img/unnamed.png" alt="user" class="user">
+                </a>
             </div>
         </div>
 
@@ -30,18 +35,18 @@
             <div class="content-search">
                 <form action="" class="form-search">
                     <i class="fas fa-search icon-search"></i>
-                    <input type="text" class="input-user" >
-                    <a href="#" class="btn" >
-                        <i class="fas fa-keyboard icon-keyboard"></i>
+                    <input id="search-input" type="text" class="input-user" title="Tìm kiếm" autocomplete="on">
+                    <a href="#" class="btn tooltip" >
+                        <i class="fas fa-keyboard icon-keyboard"><span>Công cụ nhập</span></i>
                     </a>
-                    <a href="#" class="btn">
-                        <i class="fas fa-microphone icon-micro"></i>
+                    <a href="#" class="btn tooltip">
+                        <i class="fas fa-microphone icon-micro"><span>Tìm kiếm bằng giọng nói</span></i>
                     </a>
                     
                 </form>
                 <div class="btn-search">
                     <div class="btn-search-second">
-                        <button>Tìm trên Google</button>
+                        <button id="search-btn">Tìm trên Google</button>
                         <button>Xem trang đầu tiên tìm được</button>
                     </div>
                 </div>
