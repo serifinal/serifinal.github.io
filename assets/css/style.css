@@ -592,6 +592,7 @@ html{
     width: 900px;
     max-width: calc(100% - 32px);
     background-color: #fff;
+    animation: fadeIn 0.3s linear;
 }
 
 
@@ -706,4 +707,16 @@ html{
     color: #000;
     background-color: #ccc;
     cursor: pointer;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
 }
