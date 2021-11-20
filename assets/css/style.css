@@ -11,12 +11,13 @@ html{
     scroll-behavior: smooth;
 }
 
-#main{
 
-
-}
 
 /* common */
+:root{
+    --green-color : #009688;
+}
+
 .f-15{
     font-size: 15px;
 }
@@ -63,6 +64,7 @@ html{
 .text-center{
     text-align: center !important;
 }
+
 
 /* main */
 #header{
@@ -569,3 +571,139 @@ html{
     cursor: pointer;
 }
 
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal__inner{
+    width: 900px;
+    max-width: calc(100% - 32px);
+    background-color: #fff;
+}
+
+
+.modal__header{
+    background-color: var(--green-color);
+    position: relative;
+    padding: 32px 16px;
+
+}
+
+.modal__header__main{
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.modal__header__main i{
+    margin-right: 20px;
+}
+
+.modal__header__main span{
+    letter-spacing: 5px;
+}
+
+.modal-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    color: #fff;
+}
+
+.modal__content{
+    padding: 0 16px;
+    font-size: 15px;
+}
+
+.modal__content label{
+    display: block;
+}
+
+.modal__content label p{
+    padding: 16px 0;
+}
+
+.modal__content label input{
+    width: 100%;
+    display: block;
+    padding: 10px 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.modal-pay{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    width: 100%;
+    border: none;
+    background-color: var(--green-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.modal-pay span{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.modal-pay i{
+    margin-left: 4px;
+}
+
+.modal__footer{
+    padding: 0 16px;
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    position: relative;
+}
+
+.modal__footer button{
+    padding: 10px 16px;
+    background-color: #f44336;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.modal__footer button span{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.modal__footer p{
+    position: absolute;
+    right: 16px;
+}
+
+.modal__footer p a{
+    color: #2196F3;
+}
+
+.modal-close:hover,
+.modal-pay:hover,
+.btn-close:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
